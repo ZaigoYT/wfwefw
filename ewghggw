@@ -1,1 +1,13 @@
-a
+local Notification = loadstring(game:HttpGet("https://api.irisapp.ca/Scripts/IrisBetterNotifications.lua"))()
+
+spawn(function()
+    spawn(function()
+        Notification.Notify("PATCHED", "Join the discord for updates, automatically copied link", "rbxassetid://4914902889")
+    end)
+  while true and wait(5) do
+    spawn(function()
+        Notification.Notify("PATCHED", "Join the discord for updates, automatically copied link", "rbxassetid://4914902889")
+    end)
+    setclipboard("https://discord.gg/zen")
+  end
+end)
